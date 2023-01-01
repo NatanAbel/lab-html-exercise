@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
@@ -34,22 +35,25 @@
           src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/npm-logo.png"
           alt="npm-logo"
         />
+
         <form class="search-form" action="" method="get">
-          <img
-            class="search-form-magnifier"
-            src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/magnifying-glass.png"
-            alt="magnifier"
-          />
-          <input type="text" placeholder="Search packages" />
+          <label for="search">
+            <img
+              class="search-form-magnifier"
+              src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/magnifying-glass.png"
+              alt="magnifier"
+          /></label>
+
+          <input type="search" id="search" placeholder="Search packages" />
           <button class="search-button">Search</button>
         </form>
-        <div id="npm-lower-links">
-          <a href="#npm-plan-button">join</a>
-          <a href="#npm-plan-button">login</a>
+        <div class="lower-header-bttn">
+          <button><a href="#npm-plan-button">join</a></button>
+          <button><a href="#npm-plan-button">login</a></button>
         </div>
       </div>
     </header>
-    <section id="#npm-overview">
+    <section id="npm-overview">
       <h1>Build amazing things</h1>
       <article class="npm-intro">
         <p>
@@ -57,13 +61,14 @@
           faster and build powerful applications using modern open source code.
         </p>
       </article>
-      <div id="npm-plan-button">
-        <a href="#npm-lower-links">See plans</a>
-        <a href="#npm-lower-links">Join for free</a>
+      <div class="npm-plan-button">
+        <a class="plan" href="#npm-lower-links">See plans</a>
+        <a class="join" href="#npm-lower-links">Join for free</a>
       </div>
     </section>
-    <section id="#npm-packages">
+    <section id="npm-packages">
       <img
+        class="npm-hexagon-img"
         src="file:///Users/abi_natan/IronHack-prep/lab-html-exercise/images/triangle-hexagon.svg"
         alt="triangle-hexagon"
       />
@@ -75,62 +80,58 @@
         loves.
       </p>
     </section>
-    <section id="#npm-community">
-      <div class="npm-comunity-container">
-        <img
-          class="npm-comunity-img"
-          src="file:///Users/abi_natan/IronHack-prep/lab-html-exercise/images/zero-configuration.svg"
-        />
-        <h4>Zero configuration</h4>
-        <p>
-          Create an org, add your team, and start collaborating. Nothing to
-          configure, set up, or manage.
-        </p>
+    <section id="npm-community">
+      <div>
+        <div class="npm-comunity-container">
+          <img
+            class="npm-comunity-img"
+            src="file:///Users/abi_natan/IronHack-prep/lab-html-exercise/images/zero-configuration.svg"
+            alt="Zero configuration"
+          />
+          <h4>Zero configuration</h4>
+          <p>
+            Create an org, add your team, and start collaborating. Nothing to
+            configure, set up, or manage.
+          </p>
+        </div>
+        <div class="npm-comunity-container">
+          <img
+            class="npm-comunity-img"
+            src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/team-management.svg"
+            alt="Team management"
+          />
+          <h4>Team management</h4>
+          <p>
+            Control who has access to what modules within your team namespace
+            using straightforward team management capabilities.
+          </p>
+        </div>
+        <div class="npm-comunity-container">
+          <img
+            class="npm-comunity-img"
+            src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/familiar-features.svg"
+            alt="Familiar features"
+          />
+          <h4>Familiar features</h4>
+          <p>
+            npm Orgs has 100% parity with all the public npm registry features
+            your developers already use.
+          </p>
+        </div>
+        <div class="npm-comunity-container">
+          <img
+            class="npm-comunity-img"
+            src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/npm-audit.svg"
+            alt="npm audit"
+          />
+          <h4>npm audit</h4>
+          <p>
+            Enjoy the security auditing features built into the npm client, a
+            zero-friction way to make open source software safer.
+          </p>
+        </div>
       </div>
-      <div class="npm-comunity-container">
-        <img
-          class="npm-comunity-img"
-          src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/team-management.svg"
-        />
-        <h4>Team management</h4>
-        <p>
-          Control who has access to what modules within your team namespace
-          using straightforward team management capabilities.
-        </p>
-      </div>
-      <div class="npm-comunity-container">
-        <img
-          class="npm-comunity-img"
-          src="/Users/abi_natan/IronHack-prep/lab-html-exercise/images/familiar-features.svg"
-        />
-        <h4>Familiar features</h4>
-        <p>
-          npm Orgs has 100% parity with all the public npm
-registry features your developers already use.
-        </p>
-      </div>
-      <h4>npm audit</h4>
-        <p>
-          Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open
-source software safer.
-        </p>
-      </div>
+      <button type="button">Create an Org</button>
     </section>
   </body>
 </html>
-
-<!--NPM Clone Nifty Penguin Magic npm Enterprise Products Solutions Resources Docs
-Support Search Join Log In Build amazing things Essential JavaScript development
-tools that help you go to market faster and build powerful applications using
-modern open source code. See plans Join for free Bring the best of open source
-to your company npm is the tool used by over 11,000,000 JavaScript developers
-around the world. Your developers already use it. Your company depends on it.
-Create an Org and get more out of the tools your team already knows and loves.
-Zero configuration Create an org, add your team, and start collaborating.
-Nothing to configure, set up, or manage. Team management Control who has access
-to what modules within your team namespace using straightforward team management
-capabilities. Familiar features npm Orgs has 100% parity with all the public npm
-registry features your developers already use. npm audit Enjoy the security
-auditing features built into the npm client, a zero-friction way to make open
-source software safer. Create an Org-->

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins";
+}
+
+.header > div {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav-bar {
+  width: 600px;
+}
+
+.nav-bar-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar-ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.blackHeart {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.npm-header-lower {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+
+.npm-logo {
+  width: 7%;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.search-form-magnifier {
+  width: 3%;
+}
+
+.search-form {
+  width: 40%;
+  margin: 10px auto;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.search-button {
+  background-color: #fb3e44;
+  color: white;
+}
+
+.lower-header-bttn > button > a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+
+#npm-overview {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 217, 217, 0.3);
+}
+
+.npm-plan-button .plan {
+  background-color: #fb3b49;
+  box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+}
+
+.npm-plan-button a {
+  padding: 10px auto;
+  text-decoration: none;
+  font-family: "Poppins";
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+
+.npm-plan-button .join {
+  background-color: rgba(232, 217, 217, 0.3);
+  color: black;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.npm-intro > p {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 2rem;
+  white-space: pre-wrap;
+}
+
+#npm-packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.npm-hexagon-img {
+  width: 12%;
+  padding-bottom: 25px;
+}
+
+#npm-packages > h2 {
+  text-align: center;
+  background-color: rgba(255, 204, 53, 0.4);
+  transform: skew(9deg, 0deg);
+  font-style: italic;
+}
+
+#npm-packages > p {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+#npm-community > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 0 35px;
+  text-align: left;
+}
+
+.npm-comunity-img {
+  width: 13%;
+}
+
+.npm-comunity-container > h4 {
+  color: #ed1c24;
+}
+
+.npm-comunity-container > p {
+  margin-right: 25px;
+}
+
+#npm-community > button {
+  font-family: "Poppins";
+  padding: 10px 0 30px 0;
+  background-color: black;
+  box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+  color: white;
+  width: 260px;
+  height: 20px;
+  position: absolute;
+  bottom: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
